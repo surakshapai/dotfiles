@@ -100,6 +100,9 @@ alias mount="sshfs -p 22 spai@dev33-uswest1adevc:/nail/home/spai/pg ~/dev -oauto
 alias unmount="diskutil unmount force Dev"
 alias logon="ssh -A dev33-uswest1adevc"
 
+bindkey "^[^[[C" forward-word
+bindkey "^[^[[D" backward-word
+
 # References
 # http://zsh.sourceforge.net/Doc/Release/Conditional-Expressions.html
 # https://robots.thoughtbot.com/the-unix-shells-humble-if
